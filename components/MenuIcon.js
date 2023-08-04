@@ -2,11 +2,11 @@ import { AiOutlineMenu } from 'react-icons/ai';
 
 const MenuIcon = ({ toggle }) => (
   <button
-    className="md:hidden block text-white"
+    className="md:hidden block text-white p-2"
     type="button"
     onClick={toggle}
   >
-    <AiOutlineMenu size={24} />
+    <AiOutlineMenu size={40} />
   </button>
 );
 
