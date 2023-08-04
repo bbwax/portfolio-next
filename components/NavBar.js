@@ -19,7 +19,7 @@ function NavBar() {
           </div>
         )}
       </div>
-      <nav className="hidden md:flex md:items-center md:w-full">
+      <nav className="hidden md:flex md:items-center md:w-full md:justify-end">
         <NavLinks />
       </nav>
     </>

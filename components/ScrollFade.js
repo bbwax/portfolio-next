@@ -9,24 +9,17 @@ export default function ScrollFade() {
   return (
     <div
       ref={ref}
-      className="bg-gradient-to-b from-tan to-white flex flex-col items-center justify-center h-screen p-6"
+      className="bg-gradient-to-b from-tan to-white flex flex-col items-center justify-center h-max p-6"
     >
-      <motion.img
-        initial={{ opacity: 0 }}
-        animate={{ opacity: inView ? 1 : 0 }}
-        transition={{ duration: 1 }}
-        className="h-64 w-auto rounded-lg"
-        src="/images/portrait.jpg" 
-        alt="Your Portrait"
-      />
+      
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: inView ? 1 : 0 }}
         transition={{ duration: 3 }}
-        className="card bg-white p-6 rounded-lg shadow-lg mt-4"
+        className="card bg-white p-6 rounded-lg shadow-lg mt-4 w-full sm:w-2/3"
       >
         <div className="text-center">
-          <p className="mt-2 text-black">Hi, I'm Braxton, a skilled software developer with a 
+          <p className="mt-2 text-black text-lg">Hi, I'm Braxton, a skilled software developer with a 
                             background in computer science and civil engineering with a drive to solve real-world
                              problems. Trained at UC Berkeley's Software Developer Bootcamp,
                               I specialize in web technologies like HTML/CSS, JavaScript, 
