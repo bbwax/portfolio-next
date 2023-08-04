@@ -10,6 +10,3 @@ const NavLinks = ({ closeMenu }) => (
 );
 
 export default NavLinks;
-
-
-// flex flex-col md:flex-row md:justify-between md:w-full space-y-4 md:space-y-0 md:space-x-4

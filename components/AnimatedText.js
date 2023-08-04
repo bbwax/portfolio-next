@@ -45,9 +45,7 @@ export default function AnimatedText() {
                     a Software <br /> <span className="pl-8 sm:pl-16">Developer</span>
                 </motion.p>
                 <AnimatedPortrait/>
-            </motion.div>
-            
+            </motion.div>  
         </div>
-
     );
 }
