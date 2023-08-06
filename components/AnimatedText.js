@@ -28,19 +28,19 @@ export default function AnimatedText() {
             >
                 <motion.p
                     variants={textVariants}
-                    className="self-center text-6xl sm:text-8xl text-white"
+                    className="self-center text-6xl sm:text-8xl text-light-cream"
                 >
                     Welcome!
                 </motion.p>
                 <motion.p
                     variants={textVariants}
-                    className="text-4xl sm:text-6xl text-white sm:ml-10"
+                    className="text-4xl sm:text-6xl text-light-cream sm:ml-10"
                 >
                     I'm Braxton,
                 </motion.p>
                 <motion.p
                     variants={textVariants}
-                    className="text-4xl sm:text-6xl text-white sm:ml-20"
+                    className="text-4xl sm:text-6xl text-light-cream sm:ml-20"
                 >
                     a Software <br /> <span className="pl-8 sm:pl-16">Developer</span>
                 </motion.p>

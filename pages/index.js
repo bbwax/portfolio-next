@@ -1,7 +1,9 @@
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import HomePage from '../components/HomePage'
-import ScrollFade from '../components/ScrollFade'
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import HomePage from '../components/HomePage';
+import ScrollFade from '../components/ScrollFade';
+import ColumnSection from '../components/ColumnSection';
+import { qualifications } from '../data/qualifications';
 
 export default function Home() {
   return (
@@ -11,9 +13,11 @@ export default function Home() {
         <HomePage />
       </div>
       <div>
-      <ScrollFade/>
+        <ScrollFade />
       </div>
-      
+      <div>
+        <ColumnSection qualifications={qualifications} />
+      </div>
     </Layout>
   )
 }
