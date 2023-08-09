@@ -5,10 +5,10 @@ export const qualifications = [
       discipline: 'Full Stack Developer',
       Icon: AiOutlineCode,
       intro: 'I enjoy coding apps from scratch and bringing them to life in the browser.',
-      explantionTitle: 'This is the title discipline 1.',
-      explanation: 'This is the explanation for discipline 1.',
-      statsTitle: 'This is the title for stat 1.',
-      stats: ['Stat 1', 'Stat 2', 'Stat 3']
+      explantionTitle: 'Languagues I speak:',
+      explanation: 'HTML, CSS, JavaScript (React, Next, jQuery), Node.js (Express.js), SQL (MySQL), MongoDB, RESTful APIs',
+      statsTitle: 'Dev Tools:',
+      stats: ['Visual Studio Code', 'Github', 'Wordpress', 'Chrome DevTools', 'MongoDB Compass', 'Postman', 'Vercel', 'Heroku', 'Slack', 'MERN Stack', 'Webpack']
     },
     {
       discipline: 'Real Estate',
