@@ -1,9 +1,10 @@
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import HomePage from '../components/HomePage';
-import ScrollFade from '../components/ScrollFade';
+import TextInfo from '../components/TextInfo';
 import ColumnSection from '../components/ColumnSection';
 import { qualifications } from '../data/qualifications';
+import GradientBackground from '@/components/GradientBackground';
 
 export default function Home() {
   return (
@@ -12,8 +13,11 @@ export default function Home() {
       <div>
         <HomePage />
       </div>
-      <div>
-        <ScrollFade />
+      <GradientBackground>
+        <TextInfo />
+      </GradientBackground>
+      <div className="text-center bg-white text-4xl text-dark-green ">
+        Areas of Expertise:
       </div>
       <div>
         <ColumnSection qualifications={qualifications} />
