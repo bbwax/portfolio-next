@@ -13,19 +13,19 @@ export const qualifications = [
     {
       discipline: 'Real Estate',
       Icon: AiOutlineHome,
-      intro: 'This is the intro for discipline 2.',
-      explantionTitle: 'This is the title discipline 2.',
-      explanation: 'This is the explanation for discipline 2.',
-      statsTitle: 'This is the title for stat 2.',
-      stats: ['Stat 1', 'Stat 2', 'Stat 3, Stat 1', 'Stat 2', 'Stat 3']
+      intro: 'I develop spaces—from accessory dwelling units to short-term rentals—that prioritize joy, connectivity, and the creation of memorable experiences for all who inhabit them. ',
+      explantionTitle: 'My Specialty:',
+      explanation: 'I strive to automate the short-term rental process using channel management software (IGMS) for bookings, security, cleanings, messaging, and reviews.',
+      statsTitle: 'Recent Projects:',
+      stats: ['Project Manager for 600sf Casita construction', 'Assistant Manager for 500sf ADU home additon', 'Purchased and converted a house to a STR automated smart home']
     },
     {
       discipline: 'Civil Engineer',
       Icon: AiOutlineTool,
-      intro: 'This is the intro for discipline 3.',
-      explantionTitle: 'This is the title discipline 3.',
-      explanation: 'This is the explanation for discipline 3.',
-      statsTitle: 'This is the title for stat 3.',
-      stats: ['Stat 1', 'Stat 2', 'Stat 3']
+      intro: 'I have experience at Caltrans as a Transportation Engineer working on project origination, plans, estimates, and delivery.',
+      explantionTitle: 'My inspiration:',
+      explanation: 'I draw inspiration from the flow of water and design in an efficient and fluid way.',
+      statsTitle: 'Experience:',
+      stats: ['Civil3D Design', 'Microstation Design', 'Cost Estimation', 'Plan Sheet Development', 'Project Initiation Reports', 'Project Coordination', 'Roadway, Culvert, and Curb Ramp Design']
     }
   ];

@@ -21,9 +21,9 @@ const ColumnCard = ({ discipline, Icon, intro, explanation, explantionTitle, sta
             <h3 className="text-lg font-bold mb-1 text-dark-green">{explantionTitle}</h3>
             <p className="mb-4 text-dark-green text-center w-3/4">{explanation}</p>
             <h3 className="text-lg font-bold mb-1 text-dark-green">{statsTitle}</h3>
-            <ul>
+            <ul className="text-center w-3/4">
                 {stats.map((stat, i) => (
-                    <li key={i} className="mb-1 text-dark-green">{stat}</li>
+                    <li key={i} className="mb-1 text-dark-green ">{stat}</li>
                 ))}
             </ul>
         </div>
