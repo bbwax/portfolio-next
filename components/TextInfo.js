@@ -1,4 +1,5 @@
 import WithScrollFade from "./WithScrollFade";
+import Link from "next/link";
 
 function TextInfo() {
   return (
@@ -6,12 +7,9 @@ function TextInfo() {
       <p className="mt-2 text-dark-green text-lg">
         Hi, I'm Braxton, a skilled software developer with a
         background in computer science, real estate, and civil engineering with a drive to solve real-world
-        problems. Trained at UC Berkeley's Software Developer Bootcamp,
+        problems. Trained at UC Berkeley's Software Developer Bootcamp and San Diego State University,
         I specialize in web technologies like HTML/CSS, JavaScript,
-        React.js, and the MERN stack. My expertise extends to API design,
-        data storage, user authentication, and deployment, while ensuring quality
-        code and client satisfaction. As a collaborative and creative problem solver,
-        I'm eager to bring my passion and skills to your next project.
+        React.js, Next.js, and <Link href='/about' className="font-bold">much more.</Link>
       </p>
     </div>
   );

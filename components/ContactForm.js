@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Card from './Card';
 
 
 export default function ContactPage() {
@@ -42,85 +43,90 @@ export default function ContactPage() {
     };
 
     return (
-        <div className="flex flex-col md:flex-row w-full items-center justify-center md:my-4">
-            <div className="w-full md:w-1/2 p-4 mt-">
-                <div className='md:flex md:flex-col md:items-center md:justify-center m-4'>
-                    <h2 className="text-3xl font-semibold flex justify-center pb-4">Contact Us</h2>
-                    <p className='text-center'>
-                        If there are any questions, concerns, or enthusiasm to learn more about this wonderful place,<br/>
-                        Fill out the form below!
+        <div className='bg-gradient-to-b from-tan to-dark-green'>
+            <div className="flex flex-col md:flex-row w-full items-center justify-center md:my-4 ">
+                <div className="w-full md:w-1/2 p-4 mt-">
+                    <div className='md:flex md:flex-col md:items-center md:justify-center m-4'>
+                        <h2 className="text-3xl font-semibold flex justify-center pb-4 text-white">Contact Me</h2>
+                        <p className='text-center text-white'>
+                            If you have any questions, comments, or concerns,<br />
+                            Fill out the form below!
                         </p>
+                    </div>
+                </div>
+                <div className="w-full md:w-1/2 p-4 ">
+                    <form
+                        className=" p-6 bg-light-cream rounded-lg shadow-lg"
+                        onSubmit={handleSubmit}
+                    >
+                        <div className='flex flex-col sm:flex-col md:flex-row w-full text-dark-green'>
+                            <div className="pr-2 w-full mb-4">
+                                <label className="block mb-2">First Name:</label>
+                                <input
+                                    type="text"
+                                    name="firstName"
+                                    value={formState.firstName}
+                                    onChange={handleInputChange}
+                                    required
+                                    className="w-full bg-white  px-3 py-2 border shadow-sm focus:outline-none focus:border-indigo-500"
+                                />
+                            </div>
+                            <div className="w-full mb-4">
+                                <label className="block mb-2">Last Name:</label>
+                                <input
+                                    type="text"
+                                    name="lastName"
+                                    value={formState.lastName}
+                                    onChange={handleInputChange}
+                                    required
+                                    className="w-full bg-white px-3 py-2 border  shadow-sm focus:outline-none focus:border-indigo-500"
+                                />
+                            </div>
+                        </div>
+                        <div className="mb-4 text-dark-green">
+                            <label className="block mb-2">Email:</label>
+                            <input
+                                type="email"
+                                name="email"
+                                value={formState.email}
+                                onChange={handleInputChange}
+                                required
+                                className="w-full px-3 py-2 bg-white border shadow-sm focus:outline-none focus:border-indigo-500"
+                            />
+                        </div>
+                        <div className="mb-4 text-dark-green">
+                            <label className="block mb-2">Phone Number:</label>
+                            <input
+                                type="tel"
+                                name="phoneNumber"
+                                value={formState.phoneNumber}
+                                onChange={handleInputChange}
+                                required
+                                className="w-full px-3 py-2 border bg-white shadow-sm focus:outline-none focus:border-indigo-500"
+                            />
+                        </div>
+                        <div className="mb-4 text-dark-green">
+                            <label className="block mb-2">Message:</label>
+                            <textarea
+                                name="message"
+                                value={formState.message}
+                                onChange={handleInputChange}
+                                required
+                                className="w-full px-3 py-2 border bg-white shadow-sm focus:outline-none focus:border-indigo-500"
+                            />
+                        </div>
+                        <div className='flex justify-center'>
+                            <button
+                                type="submit"
+                                className="w-min px-3 py-2 text-light-cream bg-dark-green rounded-lg shadow-sm hover:bg-gray-900 "
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div className="w-full md:w-1/2 p-4">
-                <form
-                    className=" p-6"
-                    onSubmit={handleSubmit}
-                >
-                    <div className='flex flex-col sm:flex-col md:flex-row w-full'>
-                        <div className="pr-2 w-full mb-4">
-                            <label className="block mb-2">First Name:</label>
-                            <input
-                                type="text"
-                                name="firstName"
-                                value={formState.firstName}
-                                onChange={handleInputChange}
-                                required
-                                className="w-full bg-slate-200  px-3 py-2 border shadow-sm focus:outline-none focus:border-indigo-500"
-                            />
-                        </div>
-                        <div className="w-full mb-4">
-                            <label className="block mb-2">Last Name:</label>
-                            <input
-                                type="text"
-                                name="lastName"
-                                value={formState.lastName}
-                                onChange={handleInputChange}
-                                required
-                                className="w-full bg-slate-200 px-3 py-2 border  shadow-sm focus:outline-none focus:border-indigo-500"
-                            />
-                        </div>
-                    </div>
-                    <div className="mb-4">
-                        <label className="block mb-2">Email:</label>
-                        <input
-                            type="email"
-                            name="email"
-                            value={formState.email}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full px-3 py-2 bg-slate-200 border shadow-sm focus:outline-none focus:border-indigo-500"
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block mb-2">Phone Number:</label>
-                        <input
-                            type="tel"
-                            name="phoneNumber"
-                            value={formState.phoneNumber}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full px-3 py-2 border bg-slate-200 shadow-sm focus:outline-none focus:border-indigo-500"
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block mb-2">Message:</label>
-                        <textarea
-                            name="message"
-                            value={formState.message}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full px-3 py-2 border bg-slate-200 shadow-sm focus:outline-none focus:border-indigo-500"
-                        />
-                    </div>
-                    <button
-                        type="submit"
-                        className="w-min px-3 py-2 text-white bg-slate-800 rounded-lg shadow-sm hover:bg-gray-900"
-                    >
-                        Submit
-                    </button>
-                </form>
-            </div>
         </div>
+
     )
 }
