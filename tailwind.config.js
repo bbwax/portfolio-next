@@ -19,6 +19,9 @@ module.exports = {
         'dark-green': '#7B8F6F',
         'light-cream' : '#EFEBE5',
       },
+      fontFamily: {
+        'raleway': ['Raleway', 'sans-serif'],
+      },
     },
   },
   plugins: [],
