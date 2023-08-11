@@ -1,14 +1,15 @@
 import Layout from '../components/Layout'
-import Card from '../components/Card'
+import TitleContainer from '@/components/TitleContainer'
 import SEO from '../components/SEO'
+import ResumeCard from '@/components/ResumeCard'
 
 export default function Resume() {
   return (
     <Layout>
       <SEO title='Resume' description='View my resume.' />
-      <Card heading='My Resume'>
-        {/* Add more content here */}
-      </Card>
+      <div>
+        <ResumeCard/>
+      </div>
     </Layout>
   )
 }

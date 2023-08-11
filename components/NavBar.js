@@ -26,7 +26,7 @@ function NavBar() {
 
   return (
     <>
-      {isOpen ? <CloseIcon toggle={toggle} /> : <MenuIcon toggle={toggle} />}
+      {isOpen ? <CloseIcon toggle={toggle} className="z-50" /> : <MenuIcon toggle={toggle} className="z-50"/>}
       <div className={`fixed inset-x-0 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-y-0 inset-y-0' : '-translate-y-full'} h-screen md:hidden`}>
         {isOpen && (
           <div className="z-20 flex flex-col justify-center items-center bg-dark-green h-full">

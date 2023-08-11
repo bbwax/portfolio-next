@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import Card from '../components/Card'
+import TitleContainer from '@/components/TitleContainer'
 import SEO from '../components/SEO'
 import ContactForm from '../components/ContactForm'
 
@@ -7,8 +7,13 @@ export default function Contact() {
     return (
         <Layout>
             <SEO title='Contact' description='Contact Me.' />
-            <div>
-                <ContactForm />
+            <div className='bg-gradient-to-b from-tan to-dark-green'>
+                <div>
+                <TitleContainer pageTitle="Contact Me" />
+                </div>
+                <div>
+                    <ContactForm />
+                </div>
             </div>
         </Layout>
     )

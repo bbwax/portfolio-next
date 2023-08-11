@@ -19,7 +19,7 @@ export default function Home() {
       <div className="text-center bg-white text-4xl text-dark-green ">
         Areas of Expertise:
       </div>
-      <div>
+      <div className='bg-gradient-to-b from-white to-dark-green'>
         <ColumnSection qualifications={qualifications} />
       </div>
     </Layout>

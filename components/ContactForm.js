@@ -43,14 +43,13 @@ export default function ContactPage() {
     };
 
     return (
-        <div className='bg-gradient-to-b from-tan to-dark-green'>
-            <div className="flex flex-col md:flex-row w-full items-center justify-center md:my-4 ">
+        <div >
+            <div className="flex flex-col md:flex-row w-full items-start justify-center h-screen">
                 <div className="w-full md:w-1/2 p-4 mt-">
                     <div className='md:flex md:flex-col md:items-center md:justify-center m-4'>
-                        <h2 className="text-3xl font-semibold flex justify-center pb-4 text-white">Contact Me</h2>
                         <p className='text-center text-white'>
                             If you have any questions, comments, or concerns,<br />
-                            Fill out the form below!
+                            Fill out the form and I will reach out to you!
                         </p>
                     </div>
                 </div>

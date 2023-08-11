@@ -2,7 +2,7 @@ import WithScrollFade from "./WithScrollFade";
 
 const ColumnCard = ({ discipline, Icon, intro, explanation, explantionTitle, stats, statsTitle, position }) => {
     // Base styles
-    let classNames = "flex-col flex items-center bg-light-cream p-6 border border-gray-300 hover:border-indigo-300 h-[720px]";
+    let classNames = "flex-col flex items-center bg-light-cream p-6 border border-gray-300 hover:border-indigo-300 h-[740px]";
 
     // Conditional styles based on position
     if (position === 'first') {

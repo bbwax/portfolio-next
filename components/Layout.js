@@ -3,10 +3,10 @@ import Footer from './Footer'
 import LoadingComponent from './LoadingComponent'
 
 const Layout = ({ children }) => (
-  <div className="flex flex-col min-h-screen">
+  <div>
     <LoadingComponent/>
     <Header className='' />
-    <main className="flex-grow">{children}</main>
+    <main className="">{children}</main>
     <Footer />
   </div>
 )
