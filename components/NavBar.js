@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import NavLinks from './NavLinks';
 import MenuIcon from './MenuIcon';
 import CloseIcon from './CloseIcon';
@@ -6,39 +6,36 @@ import Link from 'next/link';
 import Logo from './Logo';
 
 function NavBar() {
-
   const [isOpen, setIsOpen] = useState(false);
-
+  
+  // Toggles the open state of the navbar
   const toggle = () => setIsOpen(!isOpen);
-
-  useEffect(() => {
-    if (isOpen) {
-      // Disable scrolling when the navbar is open.
-      document.body.style.overflow = 'hidden';
-    } else {
-      // Enable scrolling when the navbar is closed.
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [isOpen]); 
 
   return (
     <>
-      {isOpen ? <CloseIcon toggle={toggle} className="z-50" /> : <MenuIcon toggle={toggle} className="z-50"/>}
-      <div className={`fixed inset-x-0 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-y-0 inset-y-0' : '-translate-y-full'} h-screen md:hidden`}>
-        {isOpen && (
-          <div className="z-20 flex flex-col justify-center items-center bg-dark-green h-full">
-            <Link href="/" >
-              <div className='absolute top-24 left-1/2 -translate-x-16'>
-                <Logo />
-              </div>
-            </Link>
-            <NavLinks closeMenu={toggle} />
-          </div>
-        )}
+      {/* Toggles between menu and close icons */}
+      {isOpen ? <CloseIcon toggle={toggle} /> : <MenuIcon toggle={toggle} />}
+      
+      {/* Mobile navigation menu */}
+      <div 
+        className={`fixed inset-x-0 top-0 transform transition-transform duration-300 ease-in-out h-screen md:hidden ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}
+        style={{ willChange: 'transform' }} 
+      >
+        {/* Main navigation content */}
+        <div className="flex flex-col justify-center items-center bg-dark-green h-full">
+          {/* Logo */}
+          <Link href="/" >
+            <div className='absolute top-24 left-1/2 transform -translate-x-1/2'>
+              <Logo />
+            </div>
+          </Link>
+          
+          {/* Navigation links */}
+          <NavLinks closeMenu={toggle} />
+        </div>
       </div>
+      
+      {/* Desktop navigation bar */}
       <nav className="hidden md:flex md:items-center md:w-full md:justify-end">
         <NavLinks />
       </nav>
