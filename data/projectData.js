@@ -1,7 +1,7 @@
 export const projectData = [
     {
-      title: "Project 1",
-      bgImage: "/path/to/image1.jpg",
+      title: "Alma Vista",
+      bgImage: "/images/alma-vista.png",
       technologies: ["React", "Next.js", "Tailwind"],
       deployedLink: "#",
       codeLink: "#",
