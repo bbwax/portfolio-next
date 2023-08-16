@@ -9,7 +9,7 @@ function SkillBarChart({ data, title }) {
     }, []);
 
     return (
-        <div className="w-full space-y-6 p-6">
+        <div className="w-full space-y-6 p-6 md:w-1/2 flex flex-col">
             <h2 className="text-xl text-even-darker-green font-semibold mb-4">{title}</h2>
             {data.map((item, index) => {
                 const percentage = loaded ? (item.value / 10) * 100 : 0;

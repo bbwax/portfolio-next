@@ -20,13 +20,13 @@ export default function About() {
         <div>
           <AboutMeText />
         </div>
-        <div>
+        <div className='flex justify-center items-center'>
           <SkillBarChart data={softwareSkills} title={"Software Skills"} />
         </div>
-        <div>
+        <div className='flex justify-center items-center'>
           <SkillBarChart data={realEstateSkills} title={"Real Estate Skills"} />
         </div>
-        <div>
+        <div className='flex justify-center items-center'>
           <SkillBarChart data={civilEngineerSkills} title={"Civil Engineer Skills"} />
         </div>
         <div>
