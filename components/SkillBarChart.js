@@ -16,7 +16,7 @@ function SkillBarChart({ data, title }) {
 
                 return (
                     <div key={index} className="w-full">
-                        <p className="mb-2">{item.skill}</p>
+                        <p className="mb-2 text-even-darker-green">{item.skill}</p>
                         <div className="w-full h-6 bg-gray-200 rounded text-even-darker-green">
                             <div
                                 style={{ width: `${percentage}%` }}
