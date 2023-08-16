@@ -44,7 +44,7 @@ export default function ContactPage() {
 
     return (
         <div >
-            <div className="flex flex-col w-full items-center justify-center h-screen">
+            <div className="flex flex-col w-full items-center justify-center h-screen pt-6">
                 <div className="w-full md:w-1/2 p-4">
                     <div className='md:flex md:flex-col md:items-center md:justify-center m-4'>
                         <p className='text-center text-even-darker-green text-xl md:text-2xl'>
