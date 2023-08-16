@@ -11,6 +11,12 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta property="og:image" content="/images/portfolio-preview.png" />
+          <meta property="og:url" content="https://www.braxwax.com" />
+          <meta name="description" content="Welcome to the portfolio for Braxton Waxdeck" />
+          <meta name="keywords" content="Braxton Waxdeck, Portfolio, Software Developer, Real Estate, Civil Engineer" />
+          <meta property="og:title" content="The Portfolio For Braxton Waxdeck" />
+          <meta property="og:description" content="Gaining Knowledge in Software Engineering, Real Estate, Civil Engineering, and life" />
           <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet"></link>
           <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
         </Head>
