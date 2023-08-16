@@ -44,16 +44,16 @@ export default function ContactPage() {
 
     return (
         <div >
-            <div className="flex flex-col md:flex-row w-full items-start justify-center h-screen">
-                <div className="w-full md:w-1/2 p-4 mt-">
+            <div className="flex flex-col w-full items-center justify-center h-screen">
+                <div className="w-full md:w-1/2 p-4">
                     <div className='md:flex md:flex-col md:items-center md:justify-center m-4'>
-                        <p className='text-center text-white'>
+                        <p className='text-center text-even-darker-green text-xl md:text-2xl'>
                             If you have any questions, comments, or concerns,<br />
                             Fill out the form and I will reach out to you!
                         </p>
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 p-4 ">
+                <div className="w-full md:w-1/2 p-12 ">
                     <form
                         className=" p-6 bg-light-cream rounded-lg shadow-lg"
                         onSubmit={handleSubmit}
@@ -124,6 +124,7 @@ export default function ContactPage() {
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
 

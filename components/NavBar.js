@@ -36,7 +36,7 @@ function NavBar() {
       </div>
       
       {/* Desktop navigation bar */}
-      <nav className="hidden md:flex md:items-center md:w-full md:justify-end">
+      <nav className="hidden md:flex md:items-center md:w-full md:justify-end pr-12 ">
         <NavLinks />
       </nav>
     </>

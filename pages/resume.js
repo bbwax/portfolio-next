@@ -8,7 +8,10 @@ export default function Resume() {
     <Layout>
       <SEO title='Resume' description='View my resume.' />
       <div>
-        <ResumeCard/>
+        <TitleContainer pageTitle="Resume" />
+      </div>
+      <div>
+        <ResumeCard />
       </div>
     </Layout>
   )

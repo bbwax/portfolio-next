@@ -8,9 +8,9 @@ export const projectData = [
     },
     {
         title: "Let Me Mug You Digital Storefront",
-        bgImage: "/images/coming-soon.png",
-        technologies: ["React", "Next.js", "Tailwind"],
-        deployedLink: "#",
+        bgImage: "/images/let-me-mug-you.png",
+        technologies: ["Wordpress", "CSS"],
+        deployedLink: "https://letmemugyoushop.wordpress.com/",
         codeLink: "#",
       },
       {

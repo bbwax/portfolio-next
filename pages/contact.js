@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <Layout>
             <SEO title='Contact' description='Contact Me.' />
-            <div className='bg-gradient-to-b from-tan to-dark-green'>
+            <div className='bg-gradient-to-b from-light-cream to-dark-green'>
                 <div>
                 <TitleContainer pageTitle="Contact Me" />
                 </div>

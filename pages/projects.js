@@ -8,8 +8,8 @@ export default function Projects() {
   return (
     <Layout>
       <SEO title='Projects' description='View my projects.' />
-      <div className=''>
-        <TitleContainer pageTitle="Projects" />
+      <div >
+        <TitleContainer pageTitle="Projects"/>
         <ProjectsSection projects={projectData} />
       </div>
 

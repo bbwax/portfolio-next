@@ -8,7 +8,7 @@ export default function About() {
   return (
     <Layout>
       <SEO title='About' description='Learn more about me.' />
-      <div className='bg-gradient-to-b from-white to-dark-green'>
+      <div className='bg-gradient-to-b from-light-cream to-dark-green' >
         <div>
           <TitleContainer pageTitle="About Me" />
         </div>
