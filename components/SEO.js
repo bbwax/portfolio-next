@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const SEO = ({ title = "My Portfolio", description = "Welcome to my portfolio!" }) => (
+const SEO = ({ title = "Braxton Waxdeck, My Portfolio", description = "Welcome to my portfolio!" }) => (
   <Head>
     <title>{title}</title>
     <meta name="description" content={description} />
