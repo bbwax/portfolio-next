@@ -5,7 +5,7 @@ import { AiFillHtml5, AiFillGithub, AiOutlineHome, AiOutlineTool, AiOutlineCode 
 
 function ResumeCard() {
   const description = "Check out my resume below!";
-  const resumeLink = "https://drive.google.com/file/d/10IJcFQyba-SauPnOvPe3LeOqnqCo4516/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/15KXVXSRQe7V2XQGVwoaziXha7SmhW96u/view?usp=sharing";
 return (
   <motion.div 
     className="flex flex-col items-center justify-start h-screen w-full bg-gradient-to-b from-light-cream to-dark-green"
